@@ -1,0 +1,9 @@
+[submodule "src/AWS-Deepracer-Gamepad-Control"]
+	path = src/AWS-Deepracer-Gamepad-Control
+	url = https://github.com/cmasenas/AWS-Deepracer-Gamepad-Control.git
+[submodule "src/RPLidar_Hector_SLAM"]
+	path = src/RPLidar_Hector_SLAM
+	url = https://github.com/NickL77/RPLidar_Hector_SLAM
+[submodule "src/phidgets_drivers"]
+	path = src/phidgets_drivers
+	url = https://github.com/ros-drivers/phidgets_drivers.git

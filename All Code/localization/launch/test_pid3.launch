@@ -1,0 +1,4 @@
+<launch>
+	<node name="dumb_control" pkg="localization" type="DumbControl.py" output="screen" />
+	<node name="manual_drive" pkg="localization" type="pid3.py" output="screen" />
+</launch>

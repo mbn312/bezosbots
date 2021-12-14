@@ -1,0 +1,13 @@
+To run the arduino code
+First have a programmed arduino. use the project already here or have
+the arduino preprogrammed.
+run or have it running
+roscore
+#You need to figure out what usb device it is. Hint: lsusb and /dev devices
+run rosrun rosserial_python serial_node.py /dev/ttyUSB**
+#To verify it is producing data listen to 
+rostopic echo /imu_data
+#The message that describes what the data is flowing is in msg/IMUData.msg
+#I have found some links for people using IMU for pose estimation here:
+#
+#

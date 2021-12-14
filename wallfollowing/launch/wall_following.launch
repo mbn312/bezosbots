@@ -1,0 +1,4 @@
+<launch>
+	<node name="dumb_control" pkg="wallfollowing" type="test_control.py" output="screen" />
+	<node name="manual_drive" pkg="wallfollowing" type="pid_cntrol.py" output="screen" />
+</launch>

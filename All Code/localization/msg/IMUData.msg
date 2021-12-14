@@ -1,0 +1,6 @@
+float32 gyro_xdot
+float32 gyro_ydot
+float32 gyro_zdot
+float32 accel_xdotdot
+float32 accel_ydotdot
+float32 accel_zdotdot

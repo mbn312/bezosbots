@@ -1,0 +1,49 @@
+#!/usr/bin/env python 
+import sensor_msgs.point_cloud2 as pc2
+import rospy
+from sensor_msgs.msg import PointCloud2, LaserScan
+from std_msgs.msg import Float64
+import laser_geometry.laser_geometry as lg
+import math
+import numpy as np
+import signal
+
+rospy.init_node("dumb_control")
+
+ybar = 0
+ytar = 0.5 #1.5
+
+angleStart =  -np.pi/2 - np.pi/6
+angleEnd = -np.pi/2 + np.pi/6
+
+pub = rospy.Publisher('error', Float64, queue_size=1)
+
+def laser_sub(msg):
+  global ybar
+  global ytar
+  global angleStart
+  global angleEnd
+  global pub
+  #rospy.loginfo(msg.angle_min)
+  #rospy.loginfo(msg.angle_max)
+  range_min = int((angleStart - msg.angle_min)/msg.angle_increment)
+  range_max = int((angleEnd - msg.angle_min)/msg.angle_increment)
+  #rospy.loginfo('min = ' + str(range_min))
+  #rospy.loginfo(range_max)
+  ranges = msg.ranges[range_min:range_max]
+  #ranges = np.clip(ranges, msg.range_min, msg.range_max)
+  #rospy.loginfo(ranges)
+  tempArr = []
+  for num, i in enumerate(ranges):
+    test = np.abs(i*np.sin(angleStart+num*msg.angle_increment))
+    if np.isfinite(test):
+      tempArr.append(test)
+    #else:
+      #print(num)
+  #ybar = np.mean(tempArr)
+  
+#rospy.loginfo(ybar)
+  pub.publish(data=(ytar - ybar))
+
+rospy.Subscriber('scan', LaserScan, laser_sub, queue_size=1) 
+rospy.spin()
