@@ -1,9 +1,19 @@
 # BezosBots
 
+* [Team](#team)
 * [Description](#description)
 * [Wall Following](#wallfollowing)
 * [All Code](#allcode)
 * [Citations](#citations)
+
+---
+### <a name="team"></a> Team: 
+---
+
+George Boyer
+Doncey Albin
+Benjamin Kraske
+Matt Nguyen
 
 ---
 ### <a name="description"></a> Description: 
@@ -30,25 +40,25 @@ https://user-images.githubusercontent.com/70385444/146097047-50029dcc-a43c-4dcf-
 This folder contains all of the code that we used over the course of our project. Here are the locations of some of things mentioned in our final report that are in this folder.
 
 * localization
-** odometry dead reckoning (scripts/dead_reckoning.py)
-** velocity dead reckoning (scripts/vel_reck.py)
-** pid controllers
-** IMU (scripts/imu_pub.py)
+    * odometry dead reckoning (scripts/dead_reckoning.py)
+    * velocity dead reckoning (scripts/vel_reck.py)
+    * pid controllers
+    * IMU (scripts/imu_pub.py)
 * global_path
-** global planner (scripts/global_planner.py)
+    * global planner (scripts/global_planner.py)
 * local_path
-** hybrid A star
+    * hybrid A star
 * RPLidar_Hector_SLAM
-** Hector SLAM
+    * Hector SLAM
 * old_scripts
-** A star (scripts/local_planner.py)
+    * A star (scripts/local_planner.py)
 
 
 ---
 ### <a name="citations"></a> Citations: 
 ---
 
-Hybrid A* Code found in All Code > local_path folder:
+Hybrid A star Code found in All Code > local_path folder:
 ```
 @mastersthesis{Kurzer1057261,
    author = {Kurzer, Karl},
