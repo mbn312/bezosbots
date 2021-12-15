@@ -28,7 +28,9 @@ The goal of this project was to set up and program an AWS DeepRacer to autonomou
 #### <a name="wallfollowing"></a> Wall Following
 ---
 
-https://user-images.githubusercontent.com/70385444/146097047-50029dcc-a43c-4dcf-bf7b-72a14637eef2.mov
+
+https://user-images.githubusercontent.com/70385444/146102161-ad747fc2-bdb3-4326-b6e4-2dff26e05669.mp4
+
 
 This folder contains our final code that was used to successfully navigate the hallways in the basement of the Engineering Center at CU Boulder. After running catkin_make, you can run the program by running:
 
