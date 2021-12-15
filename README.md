@@ -7,7 +7,7 @@
 * [Citations](#citations)
 
 ---
-##### <a name="team"></a> Team
+#### <a name="team"></a> Team
 ---
 
 George Boyer
@@ -19,14 +19,16 @@ Benjamin Kraske
 Matt Nguyen
 
 ---
-##### <a name="description"></a> Description
+#### <a name="description"></a> Description
 ---
 
 The goal of this project was to set up and program an AWS DeepRacer to autonomously navigate the hallways in the basement of the Engineering Center at CU Boulder. This was to be accomplished via two methods: 1. A simple wall-following algorithm using lidar and Proportional Integral Derivative (PID) control. 2. A full implementation of Simultaneous Localization and Mapping (SLAM) and path planning. The DeepRacer was able to successfully navigate the basement course using the first method and significant progress was made in implementing the SLAM method. The code for the wall-following implementation can be found in the wallfollowing(#wallfollowing) folder and all of the code that we used over the course of the project can be found in the All Code(#allcode) folder. More detailed instructions on how to set up and run everything can be found in the report.
 
 ---
-##### <a name="wallfollowing"></a> Wall Following
+#### <a name="wallfollowing"></a> Wall Following
 ---
+
+https://user-images.githubusercontent.com/70385444/146097047-50029dcc-a43c-4dcf-bf7b-72a14637eef2.mov
 
 This folder contains our final code that was used to successfully navigate the hallways in the basement of the Engineering Center at CU Boulder. After running catkin_make, you can run the program by running:
 
@@ -34,10 +36,8 @@ This folder contains our final code that was used to successfully navigate the h
 roslaunch wallfollowing wall_following.launch
 ```
 
-https://user-images.githubusercontent.com/70385444/146097047-50029dcc-a43c-4dcf-bf7b-72a14637eef2.mov
-
 ---
-##### <a name="allcode"></a> All Code
+#### <a name="allcode"></a> All Code
 ---
 
 This folder contains all of the code that we used over the course of our project. Here are the locations of some of things mentioned in our final report that are in this folder.
@@ -58,7 +58,7 @@ This folder contains all of the code that we used over the course of our project
 
 
 ---
-##### <a name="citations"></a> Citations
+#### <a name="citations"></a> Citations
 ---
 
 Hybrid A star Code found in All Code > local_path folder:
