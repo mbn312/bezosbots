@@ -1,6 +1,7 @@
 # BezosBots
 
 * [Team](#team)
+* [Demo](#demo)
 * [Description](#description)
 * [Wall Following](#wallfollowing)
 * [All Code](#allcode)
@@ -17,6 +18,12 @@ Doncey Albin
 Benjamin Kraske
 
 Matt Nguyen
+
+---
+#### <a name="demo"></a> Demo
+---
+
+https://github.com/user-attachments/assets/134f71f0-d935-4782-bd00-32a2bb7b3ed1
 
 ---
 #### <a name="description"></a> Description
